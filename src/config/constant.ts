@@ -1,8 +1,7 @@
 import path from 'path'
 
-const development =
-  'mongodb+srv://root:root@cluster0.g0duf0o.mongodb.net/imblogs?retryWrites=true&w=majority'
-const production = 'mongodb://localhost/imblogs'
+const development = 'mongodb://localhost/data'
+const production = 'mongodb://localhost/data'
 
 export const DB_URL = {
   development: development,
