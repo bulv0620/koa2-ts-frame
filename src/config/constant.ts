@@ -9,8 +9,11 @@ export const DB_URL = {
 }[process.env.NODE_ENV || 'production']
 
 export const PORT = 8080
-export const JWT_SECRET = 'im_blogs_bulv'
-export const LOG_PATH = path.resolve(__dirname, '../../logs/server.log')
+export const JWT_SECRET = 'koa2_ts_frame'
+export const LOG_PATH = path.resolve(
+  __dirname,
+  '../../logs/koa2_ts_frame.log'
+)
 export const JWT_WHITE_LIST = ['/v1/admin/login', '/v1/admin/register', '/docs']
 export const ERROR = {
   UNEXPECTED_ERROR: -99,

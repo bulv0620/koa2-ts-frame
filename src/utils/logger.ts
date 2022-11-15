@@ -11,6 +11,8 @@ if (!fs.existsSync(logsDir)) {
 
 // 配置log4.js
 log4js.configure({
+  pm2: true,
+  disableClustering: true,
   appenders: {
     console: { type: 'console' },
     dateFile: {

@@ -1,12 +1,14 @@
 {
-  "name": "im-blogs-server",
+  "name": "koa2-ts-frame",
   "version": "0.1.0",
-  "description": "im-blogs",
+  "description": "koa2-ts-frame",
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint --fix src/**/*.ts",
     "dev": "cross-env NODE_ENV=development nodemon --exec ts-node src/app.ts",
-    "build": "npm run lint && tsc"
+    "build": "npm run lint && tsc",
+    "serve:dev": "cross-env NODE_ENV=development pm2 startOrReload pm2-start.json --no-daemon",
+    "serve:prod": "cross-env NODE_ENV=production pm2 startOrReload pm2-start.json --no-daemon"
   },
   "author": "",
   "license": "ISC",
